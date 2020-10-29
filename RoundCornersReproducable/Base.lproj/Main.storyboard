@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FNR-kA-dPD">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="X04-6I-58g">
+            <objects>
+                <viewController id="FNR-kA-dPD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i4r-wF-TGa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvG-wL-xib" customClass="CornersViewTwo" customModule="RoundCornersReproducable" customModuleProvider="target">
+                                <rect key="frame" x="117.66666666666669" y="164" width="140" height="60"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bSv-g3-uqM"/>
+                                    <constraint firstAttribute="width" constant="140" id="x9m-h5-PuM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14s-tg-NIY" customClass="CornersViewOne" customModule="RoundCornersReproducable" customModuleProvider="target">
+                                <rect key="frame" x="117.66666666666669" y="84" width="140" height="60"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="PjI-QZ-AAb"/>
+                                    <constraint firstAttribute="width" constant="140" id="sWF-pX-6vu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useShapeMask" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6L-zt-vKN" customClass="CornersViewThree" customModule="RoundCornersReproducable" customModuleProvider="target">
+                                <rect key="frame" x="117.66666666666669" y="244" width="140" height="60"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="iwD-Wq-VhQ"/>
+                                    <constraint firstAttribute="height" constant="60" id="wXf-B7-9rY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tPL-tX-XCh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hvG-wL-xib" firstAttribute="centerX" secondItem="i4r-wF-TGa" secondAttribute="centerX" id="PCu-Bd-Gpx"/>
+                            <constraint firstItem="hvG-wL-xib" firstAttribute="top" secondItem="14s-tg-NIY" secondAttribute="bottom" constant="20" id="YcO-8G-3kH"/>
+                            <constraint firstItem="l6L-zt-vKN" firstAttribute="centerX" secondItem="i4r-wF-TGa" secondAttribute="centerX" id="aav-5C-8iS"/>
+                            <constraint firstItem="l6L-zt-vKN" firstAttribute="top" secondItem="hvG-wL-xib" secondAttribute="bottom" constant="20" id="gHd-ac-gbm"/>
+                            <constraint firstItem="14s-tg-NIY" firstAttribute="centerX" secondItem="i4r-wF-TGa" secondAttribute="centerX" id="s37-wg-EK8"/>
+                            <constraint firstItem="14s-tg-NIY" firstAttribute="top" secondItem="tPL-tX-XCh" secondAttribute="top" constant="40" id="wFZ-8E-s2H"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4V-jC-l4K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-948" y="-117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
